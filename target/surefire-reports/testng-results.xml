@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="APITestSuite" duration-ms="6018" started-at="2020-05-01T08:14:50Z" finished-at="2020-05-01T08:14:56Z">
+    <groups>
+    </groups>
+    <test name="GoogleAPITest" duration-ms="6018" started-at="2020-05-01T08:14:50Z" finished-at="2020-05-01T08:14:56Z">
+      <class name="com.googelmaps.apiTest.GooglePlaceAPIValidationTest">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:com.googelmaps.apiTest.GooglePlaceAPIValidationTest@1e9e725a]" name="testSetup" is-config="true" duration-ms="7" started-at="2020-05-01T13:44:54Z" finished-at="2020-05-01T13:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="getResponsePlaceAPI()[pri:0, instance:com.googelmaps.apiTest.GooglePlaceAPIValidationTest@1e9e725a]" name="getResponsePlaceAPI" duration-ms="2058" started-at="2020-05-01T13:44:54Z" finished-at="2020-05-01T13:44:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponsePlaceAPI -->
+      </class> <!-- com.googelmaps.apiTest.GooglePlaceAPIValidationTest -->
+      <class name="com.googelmaps.apiTest.GetResponseDistanceMatrixAPITest">
+        <test-method status="PASS" signature="setPrerequisite()[pri:0, instance:com.googelmaps.apiTest.GetResponseDistanceMatrixAPITest@70b0b186]" name="setPrerequisite" is-config="true" duration-ms="806" started-at="2020-05-01T13:44:50Z" finished-at="2020-05-01T13:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPrerequisite -->
+        <test-method status="PASS" signature="validateResponseBody()[pri:0, instance:com.googelmaps.apiTest.GetResponseDistanceMatrixAPITest@70b0b186]" name="validateResponseBody" duration-ms="3130" started-at="2020-05-01T13:44:51Z" finished-at="2020-05-01T13:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBody -->
+      </class> <!-- com.googelmaps.apiTest.GetResponseDistanceMatrixAPITest -->
+    </test> <!-- GoogleAPITest -->
+  </suite> <!-- APITestSuite -->
+</testng-results>

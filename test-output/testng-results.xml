@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="APITestSuite" duration-ms="8453" started-at="2020-05-09T16:14:34Z" finished-at="2020-05-09T16:14:43Z">
+    <groups>
+    </groups>
+    <test name="GoogleAPITest" duration-ms="8453" started-at="2020-05-09T16:14:34Z" finished-at="2020-05-09T16:14:43Z">
+      <class name="com.googelmaps.apiTest.GoogleDistanceMatrixAPITest">
+        <test-method status="PASS" signature="setPrerequisite()[pri:0, instance:com.googelmaps.apiTest.GoogleDistanceMatrixAPITest@14ec4505]" name="setPrerequisite" is-config="true" duration-ms="2879" started-at="2020-05-09T21:44:34Z" finished-at="2020-05-09T21:44:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPrerequisite -->
+        <test-method status="FAIL" signature="validateResponseBody(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.googelmaps.apiTest.GoogleDistanceMatrixAPITest@14ec4505]" name="validateResponseBody" duration-ms="0" started-at="2020-05-09T21:44:39Z" data-provider="parameters" finished-at="2020-05-09T21:44:39Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.googlemaps.utils.ReadExcel.getDataFromExcel(ReadExcel.java:36)
+	at com.googelmaps.apiTest.GoogleDistanceMatrixAPITest.getTestData(GoogleDistanceMatrixAPITest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
+	... 20 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBody -->
+      </class> <!-- com.googelmaps.apiTest.GoogleDistanceMatrixAPITest -->
+      <class name="com.googelmaps.apiTest.GooglePlaceAPIValidationTest">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:com.googelmaps.apiTest.GooglePlaceAPIValidationTest@14a2f921]" name="testSetup" is-config="true" duration-ms="5" started-at="2020-05-09T21:44:39Z" finished-at="2020-05-09T21:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="FAIL" signature="getResponsePlaceAPI()[pri:0, instance:com.googelmaps.apiTest.GooglePlaceAPIValidationTest@14a2f921]" name="getResponsePlaceAPI" duration-ms="3512" started-at="2020-05-09T21:44:39Z" finished-at="2020-05-09T21:44:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expected: "Central Park"
+     but: was null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expected: "Central Park"
+     but: was null
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.googelmaps.apiTest.GooglePlaceAPIValidationTest.getResponsePlaceAPI(GooglePlaceAPIValidationTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponsePlaceAPI -->
+      </class> <!-- com.googelmaps.apiTest.GooglePlaceAPIValidationTest -->
+    </test> <!-- GoogleAPITest -->
+  </suite> <!-- APITestSuite -->
+</testng-results>

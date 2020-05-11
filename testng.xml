@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APITestSuite">
+  <test thread-count="2" name="GoogleAPITest">
+    <classes>
+      <class name="com.googelmaps.apiTest.GoogleDistanceMatrixAPITest"/>
+      <class name="com.googelmaps.apiTest.GooglePlaceAPIValidationTest"/>
+    </classes>
+  </test> <!-- GoogleAPITest -->
+</suite> <!-- APITestSuite -->

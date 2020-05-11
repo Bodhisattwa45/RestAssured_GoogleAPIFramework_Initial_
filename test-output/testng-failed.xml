@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [APITestSuite]" parallel="none">
+  <test name="GoogleAPITest(failed)" parallel="none">
+    <classes>
+      <class name="com.googelmaps.apiTest.GooglePlaceAPIValidationTest">
+        <methods>
+          <include name="testSetup"/>
+          <include name="getResponsePlaceAPI"/>
+        </methods>
+      </class> <!-- com.googelmaps.apiTest.GooglePlaceAPIValidationTest -->
+      <class name="com.googelmaps.apiTest.GoogleDistanceMatrixAPITest">
+        <methods>
+          <include name="validateResponseBody"/>
+          <include name="setPrerequisite"/>
+        </methods>
+      </class> <!-- com.googelmaps.apiTest.GoogleDistanceMatrixAPITest -->
+    </classes>
+  </test> <!-- GoogleAPITest(failed) -->
+</suite> <!-- Failed suite [APITestSuite] -->
